@@ -32,6 +32,7 @@ To build the project run:
 
 ```bash
 ng build
+ng build -c production
 ```
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
@@ -50,6 +51,16 @@ For end-to-end (e2e) testing, run:
 
 ```bash
 ng e2e
+```
+
+## Light weight server
+
+Node based server to host the content of the folder to run the command in
+
+```bash
+npm install -g http-server
+cd dist/ud-service-workers/browser/
+http-server -p 8081
 ```
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
