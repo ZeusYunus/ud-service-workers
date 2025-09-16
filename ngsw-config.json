@@ -13,6 +13,9 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Oswald:300,700"
         ]
       }
     },
@@ -24,6 +27,21 @@
         "files": [
           "/**/*.(svg|cur|jpg|jpeg|png|apng|webp|avif|gif|otf|ttf|woff|woff2)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-posts",
+      "urls": [
+        "https://jsonplaceholder.typicode.com/posts"
+      ],
+      "version": 1,
+      "cacheConfig": {
+        "maxSize": 100,
+        "maxAge": "6h",
+        "strategy": "freshness",
+        "timeout": "10s"
       }
     }
   ]
